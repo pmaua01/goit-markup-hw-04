@@ -39,6 +39,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.container.container.page-nav {
+  /* border-bottom: solid 1px var(--brd-color); */
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -120,6 +124,12 @@ img {
 .nav-auth .link:focus {
   color: var(--acent-color);
 }
+
+/* .test:hover {
+  outline: 1px solid red;
+  color: var(--acent-color);
+  fill: var(--second--text-color);
+} */
 
 /* Nav auth icon */
 .item.flex {
@@ -411,10 +421,6 @@ img {
   margin-left: 30px;
 }
 
-.link-client:hover,
-.link-client:focus {
-  fill: var(--acent-color);
-}
 .client {
   /* outline: 1px solid green; */
   margin-left: auto;
