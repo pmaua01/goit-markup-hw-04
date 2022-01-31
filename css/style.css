@@ -115,14 +115,14 @@ img {
 }
 
 .nav-auth .link {
+  display: flex;
+  align-items: center;
+  /* outline: 1px solid green; */
   color: var(--second--text-color);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
-}
-.nav-auth .link:hover,
-.nav-auth .link:focus {
-  color: var(--acent-color);
+  fill: var(--second--text-color);
 }
 
 /* .test:hover {
@@ -136,11 +136,17 @@ img {
   display: flex;
   align-items: center;
 }
+
+/* .item {
+  color: var(--acent-color);
+} */
+
 .icon-mail {
+  --color: currentColor;
   height: 12px;
   width: 16px;
   margin-right: 10px;
-  fill: var(--second--text-color);
+  /* fill: var(--second--text-color); */
 }
 .icon-mail:hover,
 .icon-mail:focus {
@@ -151,15 +157,17 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--second--text-color);
+  /* fill: var(--second--text-color); */
 }
 
-.icon-tel:hover,
-.icon-tel:focus {
+.nav-auth .link:hover,
+.nav-auth .link:focus {
+  color: var(--acent-color);
   fill: var(--acent-color);
 }
 
 /* Header-flex */
+
 .nav {
   display: flex;
   margin-left: 93px;
@@ -353,29 +361,10 @@ img {
 .icon-button:hover,
 .icon-button:focus {
   background-color: var(--acent-color);
+  fill: var(--main-bcg-color);
 }
 .action-li + .action-li {
   margin-left: 10px;
-}
-
-.icon-team-inst:hover,
-.icon-team-inst:focus {
-  fill: var(--main-bcg-color);
-}
-
-.icon-team-twit:hover,
-.icon-team-twit:focus {
-  fill: var(--main-bcg-color);
-}
-
-.icon-team-fb:hover,
-.icon-team-fb:focus {
-  fill: var(--main-bcg-color);
-}
-
-.icon-team-in:hover,
-.icon-team-in:focus {
-  fill: var(--main-bcg-color);
 }
 
 .icon-team-container {
@@ -507,7 +496,7 @@ img {
 .icon-footer {
   fill: var(--white-color);
   margin-left: 70px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 
 .icon-footer .footer-icon-title {
@@ -516,6 +505,7 @@ img {
 
 .container.cfooter {
   display: flex;
+  align-items: baseline;
 }
 /* porfolio section button */
 .section-project {
@@ -569,13 +559,22 @@ img {
 .btn-prj:focus {
   color: var(--main-bcg-color);
   background-color: var(--acent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .prj a {
   text-decoration: none;
+  display: block;
 }
 
-.prj h2 {
+.prj a:hover,
+.prj a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.prj-h-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2px;
